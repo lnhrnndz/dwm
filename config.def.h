@@ -61,6 +61,20 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
+static const char *upvol[]   = { "amixer", "set", "Master", "2+",     NULL };
+static const char *downvol[] = { "amixer", "set", "Master", "2-",     NULL };
+static const char *mutevol[] = { "amixer", "set", "Master", "toggle", NULL };
+
+static const char *upbright[]   = { "light", "-A", "10", NULL };
+static const char *downbright[] = { "light", "-U", "10", NULL };
+
+#define XF86XK_AudioMute	    0x1008FF12   /* Mute sound from the system */
+#define XF86XK_AudioLowerVolume	0x1008FF11   /* Volume control down        */
+#define XF86XK_AudioRaiseVolume	0x1008FF13   /* Volume control up          */
+
+#define XF86XK_MonBrightnessUp   0x1008FF02  /* Monitor/panel brightness */
+#define XF86XK_MonBrightnessDown 0x1008FF03  /* Monitor/panel brightness */
+
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -102,6 +116,20 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 
 	{ MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("[ $(echo \"No\nYes\" | dmenu -i -p \"Quit dwm?\") == \"Yes\" ] && killall dwm") },
+
+	{ 0,                            XF86XK_AudioMute,            spawn,          {.v = mutevol } },
+	{ 0,                            XF86XK_AudioLowerVolume,     spawn,          {.v = downvol } },
+	{ 0,                            XF86XK_AudioRaiseVolume,     spawn,          {.v = upvol   } },
+
+    { 0,                            XF86XK_MonBrightnessDown,    spawn,          {.v = downbright } }, 
+    { 0,                            XF86XK_MonBrightnessUp,      spawn,          {.v = upbright } }, 
+
+	{ MODKEY,                       XK_F1,     spawn,          {.v = mutevol } },
+	{ MODKEY,                       XK_F2,     spawn,          {.v = downvol } },
+	{ MODKEY,                       XK_F3,     spawn,          {.v = upvol   } },
+
+	{ MODKEY,                       XK_F5,     spawn,          {.v = downbright } },
+	{ MODKEY,                       XK_F6,     spawn,          {.v = upbright   } },
 };
 
 /* button definitions */
