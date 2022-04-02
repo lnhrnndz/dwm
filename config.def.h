@@ -102,21 +102,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 
-	{ MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("[ $(echo \"No\nYes\" | dmenu -i -p \"Quit dwm?\") == \"Yes\" ] && killall dwm") },
-
-	{ 0,                            XF86XK_AudioMute,            spawn,          {.v = mutevol } },
-	{ 0,                            XF86XK_AudioLowerVolume,     spawn,          {.v = downvol } },
-	{ 0,                            XF86XK_AudioRaiseVolume,     spawn,          {.v = upvol   } },
-
-    { 0,                            XF86XK_MonBrightnessDown,    spawn,          {.v = downbright } }, 
-    { 0,                            XF86XK_MonBrightnessUp,      spawn,          {.v = upbright } }, 
-
-	{ MODKEY,                       XK_F1,     spawn,          {.v = mutevol } },
-	{ MODKEY,                       XK_F2,     spawn,          {.v = downvol } },
-	{ MODKEY,                       XK_F3,     spawn,          {.v = upvol   } },
-
-	{ MODKEY,                       XK_F5,     spawn,          {.v = downbright } },
-	{ MODKEY,                       XK_F6,     spawn,          {.v = upbright   } },
+	/*{ MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("[ $(echo \"No\nYes\" | dmenu -i -p \"Quit dwm?\") == \"Yes\" ] && killall dwm") },*/
 };
 
 /* button definitions */
