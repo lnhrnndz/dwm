@@ -57,23 +57,10 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
+static char dmenumon[2] = "0"; 
+static const char *dmenucmd[] = { "dmenu_run", "-i", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
-static const char *upvol[]   = { "amixer", "set", "Master", "2+",     NULL };
-static const char *downvol[] = { "amixer", "set", "Master", "2-",     NULL };
-static const char *mutevol[] = { "amixer", "set", "Master", "toggle", NULL };
-
-static const char *upbright[]   = { "light", "-A", "10", NULL };
-static const char *downbright[] = { "light", "-U", "10", NULL };
-
-#define XF86XK_AudioMute	    0x1008FF12   /* Mute sound from the system */
-#define XF86XK_AudioLowerVolume	0x1008FF11   /* Volume control down        */
-#define XF86XK_AudioRaiseVolume	0x1008FF13   /* Volume control up          */
-
-#define XF86XK_MonBrightnessUp   0x1008FF02  /* Monitor/panel brightness */
-#define XF86XK_MonBrightnessDown 0x1008FF03  /* Monitor/panel brightness */
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
