@@ -126,7 +126,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 
-	/*{ MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("[ $(echo \"No\nYes\" | dmenu -i -p \"Quit dwm?\") == \"Yes\" ] && killall dwm") },*/
+    { MODKEY|ShiftMask,             XK_r,      quit,           {.i = 23} },
 };
 
 /* button definitions */
