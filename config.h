@@ -64,7 +64,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; 
 static const char *dmenucmd[] = { "dmenu_run", "-m", "dmenuon", "-i", NULL };
 /*static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };*/
-static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd[]  = { "st", NULL };
 
 /*
  * Xresources preferences to load at startup
