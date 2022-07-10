@@ -7,6 +7,7 @@ https://dwm.suckless.org/
 - [alwayscenter](https://dwm.suckless.org/patches/alwayscenter/)
 - [attachbottom](https://dwm.suckless.org/patches/attachbottom/)
 - [gaps](https://dwm.suckless.org/patches/gaps/)
+- [moveresize](https://dwm.suckless.org/patches/moveresize/)
 - [restartsig](https://dwm.suckless.org/patches/restartsig/)
 - [togglefullscreen](https://github.com/bakkeby/patches/blob/master/dwm/dwm-togglefullscreen-6.2.diff) (super + y)
 - [Xresources](https://dwm.suckless.org/patches/xresources/)
