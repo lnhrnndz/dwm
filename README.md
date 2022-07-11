@@ -10,6 +10,7 @@ https://dwm.suckless.org/
 - [moveresize](https://dwm.suckless.org/patches/moveresize/)
 - [restartsig](https://dwm.suckless.org/patches/restartsig/)
 - [togglefullscreen](https://github.com/bakkeby/patches/blob/master/dwm/dwm-togglefullscreen-6.2.diff) (super + y)
+- [xrdb](https://dwm.suckless.org/patches/xrdb/) (super + F5 to reload)
 
 ## Desktop entry
 
