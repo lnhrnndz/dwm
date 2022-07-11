@@ -1,24 +1,23 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static unsigned int borderpx  = 4;        /* border pixel of windows */
-static unsigned int gappx     = 8;        /* gap between windows */
-static unsigned int snap      = 4;       /* snap pixel */
-static int showbar            = 1;        /* 0 means no bar */
-static int topbar             = 1;        /* 0 means bottom bar */
-static char font[]            = "JetBrains Mono:size=12" ;
-static char dmenufont[]       = "JetBrains Mono:size=12" ;
-static const char *fonts[]          = { font };
-static char normbgcolor[]           = "#222222";
-static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
-static char selfgcolor[]            = "#333333";
-static char selbordercolor[]        = "#8ec07c";
-static char selbgcolor[]            = "#8ec07c";
-static char *colors[][3] = {
-       /*               fg           bg           border   */
-       [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
-       [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
+static const unsigned int borderpx  = 4;        /* border pixel of windows */
+static const unsigned int gappx     = 8;        /* gap between windows */
+static const unsigned int snap      = 4;       /* snap pixel */
+static const int showbar            = 1;        /* 0 means no bar */
+static const int topbar             = 1;        /* 0 means bottom bar */
+static const char *fonts[]          = { "JetBrains Mono:size=12" };
+static const char dmenufont[]       = "JetBrains Mono:size=12";
+static const char col_gray1[]       = "#222222";
+static const char col_gray2[]       = "#444444";
+static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray4[]       = "#333333";
+static const char col_cyan[]        = "#8ec07c";
+
+static const char *colors[][3]      = {
+	/*               fg         bg         border   */
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
 /* tagging */
@@ -37,9 +36,9 @@ static const Rule rules[] = {
 };
 
 /* layout(s) */
-static float mfact     = 0.498; /* factor of master area size [0.05..0.95] */
-static int nmaster     = 1;    /* number of clients in master area */
-static int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const float mfact     = 0.498; /* factor of master area size [0.05..0.95] */
+static const int nmaster     = 1;    /* number of clients in master area */
+static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
@@ -65,28 +64,6 @@ static char dmenumon[2] = "0";
 static const char *dmenucmd[] = { "dmenu_run", "-m", "dmenuon", "-i", NULL };
 /*static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };*/
 static const char *termcmd[]  = { "st", NULL };
-
-/*
- * Xresources preferences to load at startup
- */
-ResourcePref resources[] = {
-		{ "foreground",         STRING,  &normfgcolor },
-		{ "background",         STRING,  &normbgcolor },
-		{ "selfgcolor",         STRING,  &selfgcolor },
-		{ "selbgcolor",         STRING,  &selbgcolor },
-		{ "normbordercolor",    STRING,  &normbordercolor },
-		{ "selbordercolor",     STRING,  &selbordercolor },
-		{ "font",               STRING,  &font },
-		{ "dmenufont",          STRING,  &dmenufont },
-		{ "borderpx",          	INTEGER, &borderpx },
-		{ "snap",          		INTEGER, &snap },
-		{ "showbar",          	INTEGER, &showbar },
-		{ "topbar",          	INTEGER, &topbar },
-		{ "nmaster",          	INTEGER, &nmaster },
-		{ "resizehints",       	INTEGER, &resizehints },
-		{ "mfact",      	 	FLOAT,   &mfact },
-};
-
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
