@@ -9,8 +9,18 @@ https://dwm.suckless.org/
 - [gaps](https://dwm.suckless.org/patches/gaps/)
 - [moveresize](https://dwm.suckless.org/patches/moveresize/)
 - [restartsig](https://dwm.suckless.org/patches/restartsig/)
-- [togglefullscreen](https://github.com/bakkeby/patches/blob/master/dwm/dwm-togglefullscreen-6.2.diff) (super + y)
-- [xrdb](https://dwm.suckless.org/patches/xrdb/) (super + F5 to reload)
+- [togglefullscreen](https://github.com/bakkeby/patches/blob/master/dwm/dwm-togglefullscreen-6.2.diff)
+- [xrdb](https://dwm.suckless.org/patches/xrdb/)
+
+## Keybindings
+
+| keybinding                    | description                   |
+| ----------------------------- | ----------------------------- |
+| `super + F5`                  | reload colors form xresources |
+| `super + y`                   | toggle fullscreen mode        |
+| `super + shift + space`       | toggle window floating        |
+| `super + [arrow key]`         | move floating window          |
+| `super + shift + [arrow key]` | resize floating window        |
 
 ## Desktop entry
 
