@@ -32,7 +32,7 @@ static const Rule rules[] = {
     { "Gimp",       NULL,       NULL,                   0,              1,              -1 },
     { "Steam",      NULL,       NULL,                   0,              1,              -1 },
     { "Alacritty",  "note",     NULL,                   0,              1,              -1 },
-    { "note",       "st",       NULL,                   0,              1,              -1 },
+    { "zet",        "st",       NULL,                   0,              1,              -1 },
 };
 
 /* layout(s) */
