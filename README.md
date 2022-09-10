@@ -2,16 +2,6 @@
 
 https://dwm.suckless.org/
 
-## Patches
-
-- [alwayscenter](https://dwm.suckless.org/patches/alwayscenter/)
-- [attachbottom](https://dwm.suckless.org/patches/attachbottom/)
-- [gaps](https://dwm.suckless.org/patches/gaps/)
-- [moveresize](https://dwm.suckless.org/patches/moveresize/)
-- [restartsig](https://dwm.suckless.org/patches/restartsig/)
-- [togglefullscreen](https://github.com/bakkeby/patches/blob/master/dwm/dwm-togglefullscreen-6.2.diff)
-- [xrdb](https://dwm.suckless.org/patches/xrdb/)
-
 ## Keybindings
 
 | keybinding                    | description                   |
@@ -21,6 +11,16 @@ https://dwm.suckless.org/
 | `super + shift + space`       | toggle window floating        |
 | `super + [arrow key]`         | move floating window          |
 | `super + shift + [arrow key]` | resize floating window        |
+
+## Patches
+
+- [alwayscenter](https://dwm.suckless.org/patches/alwayscenter/)
+- [attachbottom](https://dwm.suckless.org/patches/attachbottom/)
+- [gaps](https://dwm.suckless.org/patches/gaps/)
+- [moveresize](https://dwm.suckless.org/patches/moveresize/)
+- [restartsig](https://dwm.suckless.org/patches/restartsig/)
+- [togglefullscreen](https://github.com/bakkeby/patches/blob/master/dwm/dwm-togglefullscreen-6.2.diff)
+- [xrdb](https://dwm.suckless.org/patches/xrdb/)
 
 ## Desktop entry
 
