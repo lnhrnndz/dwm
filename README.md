@@ -21,6 +21,7 @@ https://dwm.suckless.org/
 - [restartsig](https://dwm.suckless.org/patches/restartsig/)
 - [togglefullscreen](https://github.com/bakkeby/patches/blob/master/dwm/dwm-togglefullscreen-6.2.diff)
 - [xrdb](https://dwm.suckless.org/patches/xrdb/)
+- [pertag](https://dwm.suckless.org/patches/pertag/)
 
 ## Desktop entry
 
