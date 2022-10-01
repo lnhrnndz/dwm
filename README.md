@@ -11,6 +11,7 @@ https://dwm.suckless.org/
 | `super + shift + space`       | toggle window floating        |
 | `super + [arrow key]`         | move floating window          |
 | `super + shift + [arrow key]` | resize floating window        |
+| `super + r                    | deck layout                   |
 
 ## Patches
 
@@ -22,6 +23,7 @@ https://dwm.suckless.org/
 - [togglefullscreen](https://github.com/bakkeby/patches/blob/master/dwm/dwm-togglefullscreen-6.2.diff)
 - [xrdb](https://dwm.suckless.org/patches/xrdb/)
 - [pertag](https://dwm.suckless.org/patches/pertag/)
+- [deck layout](https://dwm.suckless.org/patches/deck/) (+ deck-tilegap)
 
 ## Desktop entry
 
