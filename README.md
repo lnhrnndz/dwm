@@ -31,7 +31,7 @@ pkill dwm
 
 | keybinding                         | description                                          |
 | ---------------------------------- | ---------------------------------------------------- |
-| `super + shift + return`           | spawn new [st](https://github.com/lnhrnndz/dmenu)    |
+| `super + shift + return`           | spawn new [st](https://github.com/lnhrnndz/st)    |
 | `super + p`                        | run [dmenu](https://github.com/lnhrnndz/dmenu)       |
 | `super + j\|k`                     | focus window below or above on stack                 |
 | `super + shift + j\|k`             | move focused window down or up the stack             |
@@ -67,5 +67,5 @@ pkill dwm
 
 ## Desktop entry
 
-Edit and move xinit.desktop to /usr/share/xsessions/ to have a desktop entry
-that runs your .xinitrc.
+Edit and move `xinit.desktop` to `/usr/share/xsessions/` to have a desktop entry
+that runs your `.xinitrc`.
