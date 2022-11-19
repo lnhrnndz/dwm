@@ -35,6 +35,7 @@ static const Rule rules[] = {
     { "Firefox",    "Toolkit",  "Picture-in-Picture",   0,              1,              -1 },
     { "firefox",    "Toolkit",  "Picture-in-Picture",   0,              1,              -1 },
     { "zet",        "st",       NULL,                   0,              1,              -1 },
+    { "Anki",       "anki",     NULL,                   0,              1,              -1 },
 };
 
 /* layout(s) */
