@@ -35,6 +35,7 @@ static const Rule rules[] = {
     { "org.gnome.Nautilus",     "org.gnome.Nautilus",     NULL,                   0,              1,              -1 },
     { "Firefox",                "Toolkit",                "Picture-in-Picture",   0,              1,              -1 },
     { "firefox",                "Toolkit",                "Picture-in-Picture",   0,              1,              -1 },
+    { "Alacritty",              "zet",                    "zet",                  0,              1,              -1 },
     { "zet",                    "st",                     NULL,                   0,              1,              -1 },
     { "Anki",                   "anki",                   NULL,                   0,              1,              -1 },
     { "Mathpix Snipping Tool",  "mathpix-snipping-tool",  NULL,                   0,              1,              -1 },
